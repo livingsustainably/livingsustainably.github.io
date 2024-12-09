@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<head>
+  <meta charset="utf-8">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FFE37E9WL2');
+  </script>
+</head>
+
+<h2>Living Sustainably</h2>
+<div class="home">
+  <ul class="posts">
+    {% for post in site.categories.sustainability %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<footer class="site-footer" style="border-top: none;">
+  <div class="wrap">
+      <ul style="list-style-type: none;">
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="username">{{ site.github_username }} github repo</span>
+          </a>
+      </ul>
+  </div>
+</footer>
+

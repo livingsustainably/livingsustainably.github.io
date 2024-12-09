@@ -1,0 +1,23 @@
+# Site settings
+title: Living Sustainably
+email: 
+description: "Living Sustainably blog."
+baseurl: ""
+url: "http://livingsustainably.github.io"
+github_username:  livingsustainably
+future: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: green
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: green
+
+plugins:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/page:num/"
